@@ -1,8 +1,5 @@
 // conversion to A (type-cast operator)
-operator A() 
-{
-	return A();
-}
+operator A() { return A(); }
 
 // static_cast
 int main() 
