@@ -4,8 +4,8 @@
 
 class PArr{
     public:
-	    PArr() = default;
-	    PArr(int size);
+	PArr() = default;
+	PArr(int size);
         ~PArr();
 
         Wrapper*& operator[] (int index);
