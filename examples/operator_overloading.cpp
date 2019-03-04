@@ -17,8 +17,8 @@ T& operator=(const T& other) // Assignment operator
 
 struct T // Array subscript operator
 {
-          value_t& operator[](std::size_t idx)       { return mVector[idx]; }
     const value_t& operator[](std::size_t idx) const { return mVector[idx]; }
+          value_t& operator[](std::size_t idx)       { return mVector[idx]; }
 };
 
 void operator()(int n) // Function call operator
