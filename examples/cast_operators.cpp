@@ -1,10 +1,10 @@
 // static_cast
 int main() 
 {
-    /**
-     * used to cast compatible types
-     * for example:  double -> int, long -> char, int* -> void*
-     * */
+    	/**
+     	* used to cast compatible types
+     	* for example:  double -> int, long -> char, int* -> void*
+     	* */
 	const double PI = 3.14159265358979323846264279502;
 	int integer_pi = static_cast<int>(PI);
 	return 0;
@@ -15,10 +15,10 @@ class Car {};
 class Honda : public Car {};
 int main()
 {
-    /**
-     * returns NULL, when casting pointers
-     * returns std::bad_cast, when casting refecences
-     * */
+    	/**
+     	* returns NULL, when casting pointers
+    	 * returns std::bad_cast, when casting refecences
+    	 * */
 	Honda *honda = new Honda();
 	Car *car = dynamic_cast<Car*>(honda);
 	delete honda;
@@ -28,10 +28,10 @@ int main()
 // reinterpret_cast
 int main()
 {
-    /**
-     * used to cast incompatible types
-     * for example: char* -> long
-     * */
+   	 /**
+   	  * used to cast incompatible types
+    	 * for example: char* -> long
+    	 * */
 	const char *str = "lalala";
 	long int str_addr = reinterpret_cast<long int>(str);
 	cout << str << " (addr): " << str_addr;
@@ -44,9 +44,9 @@ void write(char *s){ cout << s; }
 
 int main()
 {
-    /** 
-     *  used to cast const T -> T or T -> const T
-     * */
+   	 /** 
+   	  *  used to cast const T -> T or T -> const T
+   	  * */
 	const char *str = "lalala";
 	write(const_cast<char*>(str));
 
